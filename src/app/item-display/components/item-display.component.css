@@ -1,0 +1,44 @@
+.item-display {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .item-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px dashed #ccc;
+
+    &:hover {
+      background-color: #e0f7e9;
+    }
+
+    .item-name {
+      font-weight: 500;
+    }
+
+    .item-quantity {
+      font-family: monospace;
+      color: #555;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      color: #c00;
+      cursor: pointer;
+
+      &:hover {
+        color: #900;
+      }
+    }
+  }
+}
