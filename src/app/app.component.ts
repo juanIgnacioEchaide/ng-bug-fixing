@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ItemDisplayComponent } from "./item-display/components/item-display.component";
+import { ItemDisplayComponent } from "./item-display/components/item-display/item-display.component";
 
 @Component({
   selector: 'app-root',

@@ -8,11 +8,13 @@ import {
   Renderer2,
   OnInit
 } from '@angular/core';
-import { ItemDisplayService } from '../services/item-display.service';
+import { ButtonModule } from 'primeng/button';
+import { ItemDisplayService } from '../../services/item-display.service';
 
 @Component({
   standalone: true,
   selector: 'app-item-display',
+  imports: [ButtonModule],
   templateUrl: './item-display.component.html',
   styleUrls: ['./item-display.component.scss']
 })

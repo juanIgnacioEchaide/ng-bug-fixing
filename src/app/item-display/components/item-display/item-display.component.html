@@ -1,12 +1,10 @@
 <div class="item-display">
-  <h2>{{ label }}</h2>
-
   <ul>
     @for(item of parsedData; track $index){
     <li class="item-row">
       <span class="item-name">{{ item.name || "Unnamed" }}</span>
       <span class="item-quantity">({{ item.quantity }})</span>
-      <button (click)="clickDeleteButton(item.id)">🗑️ Borrar</button>
+      <p-button (click)="clickDeleteButton(item.id)" icon="pi pi-trash" label="Borrar"/>
     </li>
     }
   </ul>

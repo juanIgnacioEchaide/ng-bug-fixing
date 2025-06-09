@@ -7,7 +7,6 @@ import { Item } from '../model/item.model';
 
 @Injectable({ providedIn: 'root' })
 export class ItemDisplayService {
-
   private itemsSubject = new BehaviorSubject<Item[]>([]);
   public onSomeEvent: Observable<Item[]> = this.itemsSubject.asObservable();
 
