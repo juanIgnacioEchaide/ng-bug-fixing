@@ -1,11 +1,11 @@
-
-
-    <ul>
-      @for(item of items(); track item.id) {
-      <li>
-        {{ item.id }} – {{ item.name || 'Sin nombre' }}
-        <button (click)="remove(item.id)">Borrar</button>
-      </li>
-      }
-    </ul>
-
+@if(error()){
+<p>Ups....</p>
+}
+@if(loading()){
+<p>Cargando...</p>
+}
+<ul>
+  @for(item of items(); track item.id) {
+ <app-item [item]="item"/>  
+  }
+</ul>

@@ -6,15 +6,16 @@ import {
 import { ButtonModule } from 'primeng/button';
 import { ItemsStateService } from '../../services/items-state.service';
 import { CommonModule } from '@angular/common';
+import { ItemComponent } from '../item/item.component';
 
 @Component({
   standalone: true,
   selector: 'app-items',
-  imports: [ButtonModule, CommonModule],
+  imports: [ButtonModule, CommonModule, ItemComponent],
   templateUrl: './items.component.html',
   styleUrls: ['./items.component.scss']
 })
-export class ItemsComponent implements OnInit {
+export class ItemsComponent {
 
   state = inject(ItemsStateService)
 
@@ -22,13 +23,5 @@ export class ItemsComponent implements OnInit {
   readonly loading = this.state.loading;
   readonly error = this.state.error;
 
-  remove(id: string) {
-    this.state.deleteItem(id);
-  }
 
-  ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-    console.log('compo', this.items())
-  }
 }

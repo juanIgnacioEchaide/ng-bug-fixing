@@ -18,12 +18,12 @@ export class ItemsStateService {
 
   private loadItems() {
     this._loading.set(true);
-    this._error.set(null);
+    this._error.set(null);  
 
     this.dataService.getItems().subscribe({
       next: (items) => {
         this._items.set(items);
-        this._loading.set(false);
+        this._loading.set(false); 
       },
       error: (err) => {
         this._error.set('Error al cargar los items.');
