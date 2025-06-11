@@ -16,7 +16,7 @@ export class ItemsStateService {
     this.loadItems();
   }
 
-  private loadItems() {
+  public loadItems() {
     this._loading.set(true);
     this._error.set(null);  
 

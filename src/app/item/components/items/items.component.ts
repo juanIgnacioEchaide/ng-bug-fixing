@@ -23,5 +23,4 @@ export class ItemsComponent {
   readonly loading = this.state.loading;
   readonly error = this.state.error;
 
-
 }

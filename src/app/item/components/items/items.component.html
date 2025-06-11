@@ -4,8 +4,9 @@
 @if(loading()){
 <p>Cargando...</p>
 }
+<button (click)="state.loadItems()">refresh</button>
 <ul>
   @for(item of items(); track item.id) {
- <app-item [item]="item"/>  
+  <app-item [item]="item" />
   }
 </ul>
