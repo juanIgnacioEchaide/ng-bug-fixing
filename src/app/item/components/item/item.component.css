@@ -4,9 +4,11 @@
   gap: 0.5rem;
   width: 90%;
   margin: auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .grid-item {
+  padding-left: 10%;
   display: grid;
   grid-template-columns: 1fr 2fr auto;
   align-items: center;
