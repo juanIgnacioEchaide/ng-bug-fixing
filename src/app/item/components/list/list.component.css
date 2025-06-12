@@ -1,0 +1,12 @@
+.reload {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: green;
+    font-size: large;
+    margin-left: 2.5%;
+}
+
+.label {
+    margin-left: 0.5%;
+}

@@ -4,7 +4,11 @@
 @if(loading()){
 <p>Cargando...</p>
 }
-<button (click)="state.loadItems()">refresh</button>
+<div class="reload">
+  <p-button class="success" icon="pi pi-refresh" (click)="state.loadItems()" />
+  <p class="label">reload</p>
+</div>
+
 <ul>
   @for(item of items(); track item.id) {
   <app-item [item]="item" />

@@ -1,4 +1,8 @@
-  <li>
-    {{ item()?.id }} – {{ item()?.name || 'Sin nombre' }}
-    <button (click)="remove(item()?.id)">Borrar</button>
-  </li>
+<div class="item-grid">
+  <div class="grid-item">
+    <span>{{ item().id }}</span> <span>{{ item().name || 'Sin nombre' }}</span>
+    <button pButton type="button" class="p-button-danger" (click)="remove(item().id)">
+      <i class="pi pi-trash"></i>
+    </button>
+  </div>
+</div>

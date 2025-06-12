@@ -1,0 +1,24 @@
+.item-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 90%;
+  margin: auto;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.grid-item:hover {
+  background-color: #f0f0f0;
+}
+
+.delete-btn {
+  border-radius: 8px !important;
+}
