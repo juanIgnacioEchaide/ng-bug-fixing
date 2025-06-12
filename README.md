@@ -1,4 +1,4 @@
-```md
+
 # Ejercicio:
 Analizar el código provisto en https://stackblitz.com/edit/component-errors-everywhere-2bgy9u?file=01-basic-errors  
 Indicar errores y proponer mejoras.
@@ -97,4 +97,4 @@ En el código del repositorio se propone las mejoras siguientes:
 ---
 
 Este enfoque de arquitectura atomizada, reactiva y separada por responsabilidades permite escalar la aplicación con una base sólida, manteniendo bajo acoplamiento y alta cohesión entre módulos.
-```
+
