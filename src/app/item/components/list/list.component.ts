@@ -10,12 +10,12 @@ import { ItemComponent } from '../item/item.component';
 
 @Component({
   standalone: true,
-  selector: 'app-items',
+  selector: 'app-list',
   imports: [ButtonModule, CommonModule, ItemComponent],
-  templateUrl: './items.component.html',
-  styleUrls: ['./items.component.scss']
+  templateUrl: './list.component.html',
+  styleUrls: ['./list.component.scss']
 })
-export class ItemsComponent {
+export class ListComponent {
 
   state = inject(ItemsStateService)
 
